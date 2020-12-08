@@ -14,8 +14,6 @@ def process(array, field_count):
     print ('Field #' + str(field_count))
 
     for y, row in enumerate(array):
-        max_x, max_y = len(row) - 1, len(array) - 1 # max rows and cols so we are not checking squares out of range
-
         for x, item in enumerate(row):
             mine_count = 0
             if item == '*': print ('*', end='') # simple case - it's a mine!
